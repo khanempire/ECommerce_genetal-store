@@ -5,6 +5,13 @@ export const formatPrice = (number) => {
   }).format(number / 100);
 };
 
+export const formatPriceToINR = (number) => {
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+  }).format(number / 100);
+};
+
 export const getUniqueValues = (data, type) => {
   let unique = data.map((item) => item[type]);
   if (type === "colors") {

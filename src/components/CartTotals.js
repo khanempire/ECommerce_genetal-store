@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
-import { formatPrice } from "../utils/helpers";
+import { formatPrice, formatPriceToINR } from "../utils/helpers";
 import { Link } from "react-router-dom";
 
 const CartTotals = () => {
@@ -13,15 +13,15 @@ const CartTotals = () => {
       <div>
         <article>
           <h5>
-            subtotal : <span>{formatPrice(total_amount)}</span>
+            subtotal : <span>{formatPriceToINR(total_amount)}</span>
           </h5>
           <p>
-            shipping fee : <span>{formatPrice(shipping_fee)}</span>
+            shipping fee : <span>{formatPriceToINR(shipping_fee)}</span>
           </p>
           <hr />
           <h4>
             order total : {""}
-            <span>{formatPrice(total_amount + shipping_fee)}</span>
+            <span>{formatPriceToINR(total_amount + shipping_fee)}</span>
           </h4>
         </article>
         {myUser ? (

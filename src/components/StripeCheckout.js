@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
-import { formatPrice } from "../utils/helpers";
+import { formatPrice, formatPriceToINR } from "../utils/helpers";
 import { useHistory } from "react-router-dom";
 
 const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
@@ -84,7 +84,7 @@ const CheckoutForm = () => {
       setTimeout(() => {
         clearCart();
         history.push("/");
-      }, 1000);
+      }, 5000);
     }
   };
   return (
@@ -98,7 +98,9 @@ const CheckoutForm = () => {
       ) : (
         <article>
           <h4>Hello, {myUser && myUser.name}</h4>
-          <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
+          <p>
+            Your total amount is {formatPriceToINR(shipping_fee + total_amount)}
+          </p>
           <p>Test Card Number : 4242 4242 4242 4242</p>
         </article>
       )}

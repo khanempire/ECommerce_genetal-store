@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
-import { getUniqueValues, formatPrice } from "../utils/helpers";
+import {
+  getUniqueValues,
+  formatPrice,
+  formatPriceToINR,
+} from "../utils/helpers";
 import { FaCheck } from "react-icons/fa";
 
 const Filters = () => {
@@ -122,7 +126,7 @@ const Filters = () => {
           {/* price */}
           <div className="form-control">
             <h5>price</h5>
-            <p className="price">{formatPrice(price)}</p>
+            <p className="price">{formatPriceToINR(price)}</p>
             <input
               type="range"
               name="price"

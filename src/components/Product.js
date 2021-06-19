@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { formatPrice } from "../utils/helpers";
+import { formatPrice, formatPriceToINR } from "../utils/helpers";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const Product = ({ image, name, price, id }) => {
       </div>
       <footer>
         <h5>{name}</h5>
-        <p>{formatPrice(price)}</p>
+        <p>{formatPriceToINR(price)}</p>
       </footer>
     </Wrapper>
   );
