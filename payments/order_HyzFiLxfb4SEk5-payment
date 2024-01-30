@@ -1,0 +1,58 @@
+{
+    "entity": "event",
+    "account_id": "acc_He1CEGtq1fyFFp",
+    "event": "payment.captured",
+    "contains": [
+        "payment"
+    ],
+    "payload": {
+        "payment": {
+            "entity": {
+                "id": "pay_HyzHmnak7RObsw",
+                "entity": "payment",
+                "amount": 2332820,
+                "currency": "INR",
+                "status": "captured",
+                "order_id": "order_HyzFiLxfb4SEk5",
+                "invoice_id": null,
+                "international": false,
+                "method": "card",
+                "amount_refunded": 0,
+                "refund_status": null,
+                "captured": true,
+                "description": "Thank you for shopping, Do visit again",
+                "card_id": "card_HyzHmqOaftljHi",
+                "card": {
+                    "id": "card_HyzHmqOaftljHi",
+                    "entity": "card",
+                    "name": "Football Era",
+                    "last4": "1111",
+                    "network": "Visa",
+                    "type": "debit",
+                    "issuer": null,
+                    "international": false,
+                    "emi": false,
+                    "sub_type": "consumer"
+                },
+                "bank": null,
+                "wallet": null,
+                "vpa": null,
+                "email": "mdaa@gmail.com",
+                "contact": "+918240968108",
+                "notes": [],
+                "fee": 55055,
+                "tax": 8398,
+                "error_code": null,
+                "error_description": null,
+                "error_source": null,
+                "error_step": null,
+                "error_reason": null,
+                "acquirer_data": {
+                    "auth_code": "307005"
+                },
+                "created_at": 1631981106
+            }
+        }
+    },
+    "created_at": 1631981111
+}

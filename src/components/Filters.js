@@ -32,7 +32,7 @@ const Filters = () => {
   return (
     <Wrapper>
       <div className="content">
-        <form onsubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()}>
           <div className="form-control">
             <input
               type="text"

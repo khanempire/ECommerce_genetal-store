@@ -7,8 +7,7 @@ import { FilterProvider } from "./context/filter_context";
 import { CartProvider } from "./context/cart_context";
 import { UserProvider } from "./context/user_context";
 import { Auth0Provider } from "@auth0/auth0-react";
-//domain "dev--3zcdqoz.us.auth0.com"
-//clientId "Oq18MXUd2Ut80nDr8RcR02M6vRaIhcgq"
+
 ReactDOM.render(
   <Auth0Provider
     domain={process.env.REACT_APP_AUTH_DOMAIN}

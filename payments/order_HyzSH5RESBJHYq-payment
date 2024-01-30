@@ -1,0 +1,58 @@
+{
+    "entity": "event",
+    "account_id": "acc_He1CEGtq1fyFFp",
+    "event": "payment.captured",
+    "contains": [
+        "payment"
+    ],
+    "payload": {
+        "payment": {
+            "entity": {
+                "id": "pay_HyzSmfCiOJ7nM9",
+                "entity": "payment",
+                "amount": 5637030,
+                "currency": "INR",
+                "status": "captured",
+                "order_id": "order_HyzSH5RESBJHYq",
+                "invoice_id": null,
+                "international": false,
+                "method": "card",
+                "amount_refunded": 0,
+                "refund_status": null,
+                "captured": true,
+                "description": "Thank you for shopping, Do visit again",
+                "card_id": "card_HyzSmisa9hciw4",
+                "card": {
+                    "id": "card_HyzSmisa9hciw4",
+                    "entity": "card",
+                    "name": "Football Era",
+                    "last4": "1111",
+                    "network": "Visa",
+                    "type": "debit",
+                    "issuer": null,
+                    "international": false,
+                    "emi": false,
+                    "sub_type": "consumer"
+                },
+                "bank": null,
+                "wallet": null,
+                "vpa": null,
+                "email": "khangear1@gmail.com",
+                "contact": "+917070124319",
+                "notes": [],
+                "fee": 133035,
+                "tax": 20294,
+                "error_code": null,
+                "error_description": null,
+                "error_source": null,
+                "error_step": null,
+                "error_reason": null,
+                "acquirer_data": {
+                    "auth_code": "823457"
+                },
+                "created_at": 1631981731
+            }
+        }
+    },
+    "created_at": 1631981734
+}
